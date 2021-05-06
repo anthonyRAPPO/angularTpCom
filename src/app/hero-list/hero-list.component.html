@@ -1,0 +1,9 @@
+<ul>
+    <li *ngFor="let hero of heroes"> 
+        <p>je suis le hero : {{hero.name}} avec l'id : {{hero.id}}</p>
+    </li>
+</ul>
+<div>
+    <button (click)="add('HeroTic')">Ajouter HeroTIC</button>
+    <button (click)="remove(heroes[5])">Supprimer HeroTIC</button>
+</div>

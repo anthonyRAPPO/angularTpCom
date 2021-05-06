@@ -1,0 +1,12 @@
+<p>heroes works!</p>
+<ul>
+    <li *ngFor="let hero of lesheros; index as i trackBy: letrackerdehero"> 
+        <div [ngSwitch]="hero.team">
+            <div *ngSwitchCase="'Came'">{{i}}. {{hero.name}} --> {{hero.team | uppercase}} : il est came de fou c cho</div>
+            <div *ngSwitchCase="'Sportifs'">{{i}}. {{hero.name}} --> {{hero.team | lowercase}} : c'est un sportif ça fait plaiz de ouf</div>
+            <div *ngSwitchDefault>{{i}}. {{hero.name}} --> {{hero.team}} il pu la merde mino</div>
+        </div>
+    </li>
+</ul>
+<p>{{lesheros|slice:1:3|json}}</p>
+<p>{{today|date:'fullDate'}}</p>

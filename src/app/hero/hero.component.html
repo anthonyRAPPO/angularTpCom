@@ -1,0 +1,13 @@
+<span (click)="petiteMethodePepouze()">YEA YEA EA YEA le nom c'est : {{name}}</span>
+<button (click)="petitLikeMino()" >like</button>
+<button (click)="methodeChange(true)">Like MINO!!</button>
+<button (click)="methodeChange(false)">Like PAS MINO!!</button>
+<div>
+    <button (click)="inc()">AUGMENTE LA TAILLE!!!</button>
+    <button (click)="dec()">DIMINUE LA TAILLE DE CE TEXTE MINO!!!</button>
+    <label [style.font-size.px]="size">LE text dans HERO</label>
+</div>
+<p *ngIf="affiche else noptemplate" >YEAYEAYEAYEAYAEY</p>
+<ng-template #noptemplate>
+    <p>NONNONONONONONONON</p>
+</ng-template>
